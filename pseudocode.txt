@@ -1,0 +1,39 @@
+# José Luis Lobera del Castillo
+# InstagramBot.py Simulates a human interaction with instagram web
+
+void human_type(str, WebElement): sends keys from str to WebElement
+
+void print_menu(): Prints a menu for the user to use
+
+void print_post_menu(): Prints a menu for the post functions
+
+class Bot
+    Attributes:
+    - Username: str
+    - Password: str
+    - email: str
+    - Name: str
+    + browser: Webdriver
+
+    Methods:
+    + Getters and Setters
+    - void openInstagram(): gets the webdriver 'https://instagram.com'
+    + void SignUp(): Creates an account from scratch
+    + void LogIn(): Enters to the user's instagram account
+    - void goHome(): Takes the user to the home screen
+    - void goToProfile(): goes to the user's goToProfile
+    + void search(): Looks for a tag word, list the results and clicks the selected openInstagram
+    + void follow(): Looks for an specific username and follows it
+    + void unfollow(): Looks for an specific username and unfollows it
+    - void like(): Likes a post when user in post
+    - void comment(): comments a specific string when user in post
+    - void share(): shares a post with an specific username when user in post
+    - void nextPost(): Navegates to the next post when user in post
+    - void prevPost(): Navegates to prev post when user in post
+    + void openPost(): Opens an specific post when user on a profile and calls print_post_menu() for the user to choose post functions
+    + void sendDM(): Sends an specific string as a DM to an specific username
+    + file followers(): Creates a 'USERNAME_followers'.txt file with the list of all followers usernames when user in a profile
+    + file following(): Creates a 'USERNAME_following'.txt file with the list of all following usernames when user in a profile
+    + void unfollowers(): Prints all usernames that are in following but not in following when user in a profile
+    + void menu(): Lets the user interact with the methods, calls print_menu()
+
